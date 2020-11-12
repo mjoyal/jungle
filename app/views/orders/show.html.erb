@@ -14,17 +14,28 @@
     <tr>
       <th colspan="2">Product</th>
       <th>Unit Price</th>
+      <th>Quantity</th>
       <th>Price</th>
     </tr>
   </thead>
   <tbody>
-  <% puts  @order.total_cents %> 
   <% @line_item.each do |item| %>
-    <% puts item.product_id %>
-    <% puts item.quantity %>
-    <% puts item.total_price_cents %>
-    <% puts "------------------" %>
+    <% @product.each do |product| %> 
+      <% if product.id == item.product_id %> 
+      <%= render 'line_item', quantity: item[:quantity].to_i, product: product %>
+      <% end %> 
+     <% end %> 
   <% end %>
   </tbody>
+  <tfoot>
+        <tr>
+          <th colspan="4">
+            TOTAL:
+          </th>
+          <th>
+            <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
+          </th>
+        </tr>
+      </tfoot>
   </table>
 </section>
