@@ -6,8 +6,25 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <p>We have sent a confirmation email to <%= @order.email %></p>
   </div>
-
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
-
+  
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th colspan="2">Product</th>
+      <th>Unit Price</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% puts  @order.total_cents %> 
+  <% @line_item.each do |item| %>
+    <% puts item.product_id %>
+    <% puts item.quantity %>
+    <% puts item.total_price_cents %>
+    <% puts "------------------" %>
+  <% end %>
+  </tbody>
+  </table>
 </section>
