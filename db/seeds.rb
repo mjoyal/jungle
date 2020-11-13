@@ -36,9 +36,9 @@ puts "Re-creating Products ..."
 Product.destroy_all
 
 cat1.products.create!({
-  name:  'Men\'s Classy shirt',
+  name:  'Nike Airforce 1',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel1.jpg'),
+  image: open_asset('apparel1.png'),
   quantity: 10,
   price: 64.99
 })
@@ -46,15 +46,15 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Women\'s Zebra pants',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel2.jpg'),
+  image: open_asset('apparel1.png'),
   quantity: 18,
   price: 124.99
 })
 
 cat1.products.create!({
-  name:  'Hipster Hat',
+  name:  'Nana Socks',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel3.jpg'),
+  image: open_asset('apparel3.png'),
   quantity: 4,
   price: 34.49
 })
@@ -109,17 +109,17 @@ cat2.products.create!({
 })
 
 cat3.products.create!({
-  name:  'Optimal Sleeping Bed',
+  name:  'Retro Sage Clock',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('furniture1.jpg'),
+  image: open_asset('furniture1.png'),
   quantity: 320,
   price: 3_052.00
 })
 
 cat3.products.create!({
-  name:  'Electric Chair',
+  name:  'Black & Gold Wall Lamp',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('furniture2.jpg'),
+  image: open_asset('furniture2.png'),
   quantity: 2,
   price: 987.65
 })
