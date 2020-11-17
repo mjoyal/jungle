@@ -18,6 +18,10 @@ Rails.application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+ 
+  # deal with updates to server
+  config.reload_classes_only_on_change = false
+  config.file_watcher = ActiveSupport::FileUpdateChecker
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
