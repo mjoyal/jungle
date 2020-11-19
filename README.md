@@ -20,23 +20,23 @@ A mini e-commerce application built with Rails 4.2. App tested with RSPEC for mo
 
 Index / Product Page
 
-![index](public/uploads/index.png)
+![index](public/index.png)
 
 Cart
 
-![cart](public/uploads/cart.png)
+![cart](public/cart.png)
 
 Order Confirmation
 
-![Order Confirmation](public/uploads/order-confirmation.png)
+![Order Confirmation](public/order-confirmation.png)
 
 Admin Products View
 
-![Admin Products View](public/uploads/admin.png)
+![Admin Products View](public/admin.png)
 
 Admin Add New Product 
 
-![Admin Add New Product](public/uploads/new-product.png)
+![Admin Add New Product](public/new-product.png)
 
 ## Setup
 
