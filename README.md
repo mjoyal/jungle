@@ -1,7 +1,42 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. App tested with RSPEC for models and Capybara(Poltergeist) for features.
 
+## Features 
+### Admin
+ - Admin users can list and create new categories
+ - Admins can add new products using the new category
+ - Secured with HTTP basic authentication
+ - Dashboard that lists product quantities and categories
+
+### Users
+
+- Add products to cart
+- Purchase products (using Stripe)
+- Sold out badge when products are out of stock
+- Create an account and login
+
+## App Screenshots
+
+Index / Product Page
+
+![index](public/uploads/index.png)
+
+Cart
+
+![cart](public/uploads/cart.png)
+
+Order Confirmation
+
+![Order Confirmation](public/uploads/order-confirmation.png)
+
+Admin Products View
+
+![Admin Products View](public/uploads/admin.png)
+
+Admin Add New Product 
+
+![Admin Add New Product](public/uploads/new-product.png)
 
 ## Setup
 
